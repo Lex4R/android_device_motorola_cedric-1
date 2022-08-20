@@ -22,6 +22,9 @@ DEVICE_PACKAGE_OVERLAYS += \
 # Properties
 -include $(LOCAL_PATH)/vendor_prop.mk
 
+# Tweaks for 'low ram' devices
+-include device/motorola/cedric/lowram/BoardConfig.mk
+
 # Audio
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info.xml \
