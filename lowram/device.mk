@@ -18,8 +18,8 @@ PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
 # leave less information available via JDWP.
 PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 
-# Disable Scudo outside of eng builds to save RAM.
-PRODUCT_DISABLE_SCUDO := true
+#Don't use scudo to save RAM.
+PRODUCT_USE_SCUDO := false
 
 # Do not spin up a separate process for the network stack on go devices, use an in-process APK.
 PRODUCT_PACKAGES += InProcessNetworkStack
